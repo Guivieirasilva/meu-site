@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap');
+
+body{
+    font-family: 'Charis SIL', serif;
+}
+main{
+    display: grid;
+    grid-template-areas: "um dois" ;
+    grid-template-columns: auto 200px;
+}
+section{
+    grid-area: um;
+}
+aside{
+    grid-area: dois;
+}
+header{
+    background-color: #E5E5E5;
+    padding: 20px;
+}
+article#publ{
+    background-color: #E5E5E5;
+    padding: 20px;
+
+}
+
+article#habi{
+    background-color: #4387D8;
+    padding: 20px;
+}
+article#form{
+    background-image: url(img/perfil\ 2.jpg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+h1, h2 {
+    text-align: center;
+}
+aside{
+    background-color: #315E93;
+    padding: 20px;
+}
+
+img{
+    width: 170px;
+}
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: black;
+    background-color: silver;
+}
+@media screen and (max-width: 1024px) {
+    main{
+        display: block;
+    }
+}
