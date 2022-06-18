@@ -2,29 +2,51 @@
 
 body{
     font-family: 'Charis SIL', serif;
-    background: linear-gradient(#62cce4, #2a9bb7) ;
+    background-color: #45c4b15b;
 }
+/*menu de navegação  */
 nav{
-    position: absolute;
-    display: inline;
+    top: 0;
+    left: 0;
+    position:absolute;
+    background-color: #45C4B0;
+    display: inline-block;
+    width: 100%;
 }
 .menu{
-    padding: 0 15px;
-    background-color: transparent;
-    margin: 15px;
-
+    font-size: large;
+    display:inline-block ;
+}
+.menu ul li{
+    display: inline;
+}
+.menu ul li a{
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+}
+.menu ul li a:hover, a:focus{
+    color: black;
+    animation: shake .1s;
 }
 header{
-    background:rgba(0, 0, 255, 0.144);
-    padding: 20px;
+    margin-top: 100px;
+    background: linear-gradient(#45c4b12d, #45c4b141);
+    text-align: end;
 }
-article#publ{
+img#perfil{
+    padding: 20px 50px;
+    position: relative;
+    width: 100px;
+ }
+ 
+#publ{
     background-color: #E5E5E5;
     padding: 20px;
 
 }
 
-article#habi{
+#habi{
     background-color: #4387D8;
     padding: 20px;
 }
@@ -36,43 +58,23 @@ aside{
     background-color: #315E93;
     padding: 20px;
 }
-img#perfil{
-   width: 100px;
-}
-ul, li, a{
+
+li, a{
     list-style: none;
     text-decoration: none;
 }
-li{
-    display: inline;
-}
 
-
-a:hover, a:focus {
-    color: black;
-    /* background-color: silver; */
-}
-.card{
-    width: 150px;
-    margin: 7px;
-    padding: 4px;
-    background-color: white;
-}
-.cert{
-    width: 250px;
-    margin: 15px;
-}
 /* Icones */
 
 .icons{
-    display: flex;
-    column-gap: 25px;
-    justify-content: end;
-    
+    position: absolute;
+    top: -0.5rem;
+    right: 2rem ;  
 }
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -106,6 +108,19 @@ a:hover, a:focus {
     40%{transform: rotate(-15deg);}
 }
 .git, .linkd{
-width: 50px;
-height: 50px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+/* Habilidades */
+
+.card{
+    width: 150px;
+    margin: 7px;
+    padding: 4px;
+    background-color: white;
+}
+.cert{
+    width: 250px;
+    margin: 15px;
 }
