@@ -1,0 +1,52 @@
+aside#certificados{
+    background-color: var(--primary);
+    
+}
+aside#certificados h3{
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 700;
+}
+aside#certificados div{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+   
+}
+.cert{
+    width: 250px;
+    margin: 15px;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 28px 36px -16px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, .5) ;
+    transition: 1s;
+}
+.cert:hover, .cert:focus{
+    transform: scale(1.1,1.1);
+    
+}
+@media (max-width: 820px) {
+    aside#certificados h3{
+        font-size: 30px ;
+    }   
+    .cert{
+        width: 200px;
+        margin: 5px;
+        padding: 1px;
+    }
+    aside#certificados div{
+        text-align: center;
+        justify-content: center;
+        padding: 25px;
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: 200px 200px 200px;
+        
+       
+    }
+    
+}

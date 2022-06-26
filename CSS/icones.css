@@ -1,0 +1,75 @@
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .25s;
+}
+.icon:hover, .icon:focus{
+    outline-offset: 4px
+}
+.icon:hover, .icon:focus img{
+    animation: shake .25s
+}
+.icon-git:hover,.icon-git:focus{
+    background-color: #161B22;
+    outline-color: #161B22;
+
+}
+.icon-linkd:hover, .icon-linkd:focus{
+    background-color: #0077b5 ;
+    outline-color: #0077b5;
+}
+.icon-whats:hover, .icon-whats:focus{
+    background-color:#00E676 ;
+    outline-color: #00E676;
+}
+.icon-email:hover, .icon-email:focus{
+    background-color: #EA4335;
+    outline-color: #BB001B;
+
+}
+.git, .linkd, .whats{
+    width: 40px;
+    height: 40px;
+}
+.email{
+    width: 35px;
+    height: 35px;
+}
+@keyframes shake {
+    10%{transform: rotate(15deg)}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
+
+@keyframes shakeSlowly {
+    10%{transform: rotate(5deg)}
+    20%{transform: rotate(-5deg);}
+    30%{transform: rotate(5deg);}
+    40%{transform: rotate(-5deg);}
+}
+@media (max-width: 820px) {
+    .icon{
+        width: 30px;
+        height: 30px;
+        margin: 4px;
+    }
+    .git, .linkd, .whats{
+        width: 30px;
+        height: 30px;
+       }
+    .email{
+        width: 25px;
+        height: 25px;
+    }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap');
+@import url(/CSS/variaveis.css);
+@import url(CSS/header.css);
+@import url(CSS/inicio.css);
+@import url(CSS/formacao.css);
+@import url(CSS/habilidades.css);
+@import url(CSS/publicacao.css);
+@import url(CSS/certificados.css);
+@import url(CSS/footer.css);
+@import url(CSS/icones.css);
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth ;
+}
+body{
+    font-family: 'Charis SIL', serif;
+    background-color: var(--background);
+}

@@ -1,0 +1,110 @@
+section#publi{
+    display: flex;
+}
+section#publ div#cont-publ{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+section#publ div#cont-publ h2{
+    color: var(--title);
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+div#cont-publ h2 span{
+    font-size: 24px;
+}
+div#cont-publ article.public:not(:first-child){
+    margin-top: 24px;
+}
+div#cont-publ article.public:nth-child(2){
+    margin-top: 40px;
+}
+div#cont-publ article.public{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 24px 26px;
+    box-shadow: 0 28px 36px -16px rgba(0, 0, 0, 0.1);
+}
+article.public div{
+    margin-left: 24px;
+}
+article.public div h3{
+    font-size: 24px;
+    color: var(--title);
+}
+article.public div p {
+    font-family: serif;
+    font-size: 18px;
+    color: var(--text);
+    letter-spacing: .10px;
+}
+article.public div p a{
+    text-decoration: none; 
+}
+article.public div p a:hover, a:focus{
+    opacity: 80%;
+}
+.link{
+    color: var(--primary);
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 10px 5px 0;
+    transition: 1s;
+}
+.link:hover, .link:focus{
+    opacity: 60%;
+}
+.projeto{
+    width: 320px;
+    height: 350px;
+    transition: 1s;
+
+}
+.projeto:hover, .projeto:focus{
+    transform: scale(1.1,1.1);
+
+}
+@media (max-width: 820px) {
+    section#publ div#cont-publ h2{
+        margin-right: 10px;
+        margin-left: 20px;
+        font-size: 30px;
+        display: inline-block;
+    }
+    div#cont-publ h2 span{
+        font-size: 22px;
+    }
+    .projeto{
+        display: block;
+        width: 280px;
+        height: 250px;
+        margin-left: 50px;
+        grid-area: 2;
+    }
+    div#cont-publ article.public{
+        padding: 20px 10px;
+        display: grid;
+        grid-template-rows: 2fr 1fr; 
+    }
+    article.public div{
+        margin-bottom: 20px;
+        grid-area: 1;
+    }
+    article.public div.clon{
+        margin-bottom: 0px;
+    
+    }
+    article.public div h3{
+        font-size: 20px;
+    }
+
+}
