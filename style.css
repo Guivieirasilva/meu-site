@@ -9,6 +9,17 @@
 @import url(CSS/footer.css);
 @import url(CSS/icones.css);
 
+:root{
+    --background: #E5EAEF;
+    --primary: #4387D8;
+    --secondary: #315E93;
+    --tertiary: #FBFCFE;
+    --white: #FFFFFF;
+    --title: #102032;
+    --text: #10203283;
+    --container: 920px;
+}
+
 *{
     margin: 0;
     padding: 0%;
@@ -17,6 +28,7 @@
 html{
     scroll-behavior:smooth ;
 }
+
 body{
     font-family: 'Charis SIL', serif;
     background-color: var(--background);
